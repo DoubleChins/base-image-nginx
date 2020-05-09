@@ -13,4 +13,6 @@ COPY misc/rand /etc/ssl/certs/random.key
 EXPOSE 80
 EXPOSE 443
 
+RUN chmod +x /start.sh
+
 CMD ["/start.sh"]
